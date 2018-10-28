@@ -16,7 +16,7 @@ declare namespace PinoHttp {
 
     interface Options extends LoggerOptions {
         logger?: Logger;
-        genReqId?: (req: IncomingMessage) => number;
+        genReqId?: (req: IncomingMessage) => number | string;
         useLevel?: Level;
     }
 }
